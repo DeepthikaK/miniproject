@@ -1,0 +1,9 @@
+$('#menu1').click(function(){
+	$('#discussion_ul').slideToggle();
+});
+$('.discussion_li').click(function(){
+	$('#discussion_ul').slideToggle();
+});
+$(document).dblclick(function(){
+	$('#discussion_ul').slideToggle();
+});

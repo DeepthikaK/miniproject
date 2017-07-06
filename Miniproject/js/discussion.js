@@ -1,4 +1,6 @@
+
 $('#menu1').click(function(){
+	$(this).toggleClass('active');
 	$('#main_body').html('');
 	$.ajax({
 		url:"discussion.php",
@@ -7,9 +9,9 @@ $('#menu1').click(function(){
 		dataType:"json",
 		success:function(data){
 			var i=0;
-			while(data.rows){
-				$('#main_body').append('<u>'+data[i].sender+'@'+data[i].date+'</u>:'+data[i].message+'<br><br>');
-				i++;
+			for(i=0;i<data.rows;i++){
+				$('#main_body').append('<u><div class="posts">'+data[i].sender+'@'+data[i].date+'</u>:'+data[i].message+'</div><br><br>');
+				
 				
 				
 			}

@@ -1,9 +1,28 @@
 $('#menu1').click(function(){
-	$('#discussion_ul').slideToggle();
+	
+		$('#discussion_ul').slideToggle();
+	
 });
-$('.discussion_li').click(function(){
-	$('#discussion_ul').slideToggle();
+$('#department_dis').click(function(){
+	
+		$('#discussion_ul').slideToggle();
+	
 });
-$(body).click(function(){
-	$('#discussion_ul').slideUp();
-})
+$('#menu2').click(function(){
+	
+		$('#discussion_ul').slideUp();
+	
+});
+$('#menu0').click(function(){
+	
+		$('#discussion_ul').slideUp();
+	
+});
+$(document).dblclick(function(){
+	 $('#discussion_ul').hide();
+});
+$('#class_dis').click(function(){
+	
+		$('#discussion_ul').slideToggle();
+	
+});

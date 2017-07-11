@@ -64,7 +64,8 @@
 }
 #discussion_ul{
 	margin-left:120px;
-	
+	position:fixed;
+	margin-top:100px;
 	list-style:none;
 	
 	width:200px;
@@ -94,7 +95,7 @@
 
 .posts{
 	z-index:999;
-	
+	height:200px;
 	padding:20px;
 	float:left;
 	width:80%;
@@ -114,4 +115,11 @@
 }
 .date{
 	color:#cccccc;
+}
+.comment{
+	margin-bottom:0px;
+	margin-left:40px;
+}
+#textarea_college{
+	width:90%;
 }

@@ -63,8 +63,9 @@
 	margin-top:10px;
 }
 #discussion_ul{
-	margin-left:150px;
-	
+	margin-left:120px;
+	position:fixed;
+	margin-top:100px;
 	list-style:none;
 	
 	width:200px;
@@ -94,7 +95,7 @@
 
 .posts{
 	z-index:999;
-	
+	height:200px;
 	padding:20px;
 	float:left;
 	width:80%;
@@ -103,6 +104,7 @@
 	margin-bottom:30px;
 	box-shadow: 5px 5px 5px #888888;
 	text-decoration:bold;
+	border:solid 1px grey;
 }
 
 #main_body{
@@ -114,4 +116,12 @@
 }
 .date{
 	color:#cccccc;
+}
+.comment{
+	margin-bottom:0px;
+	margin-left:40px;
+}
+#textarea_college{
+	width:90%;
+	padding:15px;
 }

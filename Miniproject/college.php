@@ -3,7 +3,7 @@ session_start();
 $json_array[]="";
 
 $con=mysqli_connect("localhost","root","","discussion");
-$department= $_SESSION['department'];
+
 $q="SELECT * FROM `college`";
 $res=mysqli_query($con,$q);
 

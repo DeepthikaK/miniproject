@@ -5,7 +5,7 @@
 		<title>Home</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style1.css" rel="stylesheet">
 
 		<div id="header">
 		<div id="profile_heading">
@@ -16,7 +16,7 @@
 		<br><br>
 			<ul id="menu" >
 				<li id="menu0" class="items"><b>HOME</b></li>
-				<li id="menu1" class="items"><b>DISCUSSION FORUM</b></li>
+				<li id="menu1" class="items"><b>ACTIVITY ROOM</b></li>
 				<li id="menu2" class="items"><b>CALENDER</b></li>
 			</ul> 
 		</nav>
@@ -50,8 +50,8 @@ else{
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/discussion1.js"></script>
-<script type="text/javascript" src="js/discussion_li.js"></script>
+<script type="text/javascript" src="js/discussion_li1.js"></script>
 
-	
-
+<script type="text/javascript" src="js/ui/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/calender.js"></script> 
 

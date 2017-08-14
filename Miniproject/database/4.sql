@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2017 at 04:06 PM
+-- Generation Time: Jul 19, 2017 at 10:16 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -34,6 +34,16 @@ CREATE TABLE `4` (
   `branch` varchar(10) NOT NULL,
   `section` char(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `4`
+--
+
+INSERT INTO `4` (`sender`, `date`, `data`, `comments`, `branch`, `section`) VALUES
+('d4', '2017-07-03', 'wergtgw', '', 'EEE', 'B'),
+('d4', '2017-07-03', 'wergtgw', '', 'EEE', 'B'),
+('d4', '2017-07-12', '', '', 'EEE', 'B'),
+('d4', '2017-07-12', 'kjfnvjd', '', 'EEE', 'B');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

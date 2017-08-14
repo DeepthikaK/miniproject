@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2017 at 04:04 PM
+-- Generation Time: Jul 19, 2017 at 10:12 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -29,16 +29,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `flogin` (
   `id` varchar(20) NOT NULL,
   `name` char(20) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `password` varchar(300) NOT NULL,
+  `classes` varchar(300) NOT NULL,
+  `branch` char(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `flogin`
 --
 
-INSERT INTO `flogin` (`id`, `name`, `password`) VALUES
-('cse01', 'abc', 'cse'),
-('it05', 'def', 'it');
+INSERT INTO `flogin` (`id`, `name`, `password`, `classes`, `branch`) VALUES
+('cse01', 'abc', 'cse', '', 'CSE'),
+('ece19', 'xyz', 'login', '', ''),
+('mech03', 'XXX', 'mech', '', ''),
+('mech04', 'abcd', 'mech', '', '');
 
 --
 -- Indexes for dumped tables

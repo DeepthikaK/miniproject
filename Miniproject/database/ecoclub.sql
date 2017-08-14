@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2017 at 10:15 AM
+-- Generation Time: Jul 19, 2017 at 12:01 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -17,30 +17,32 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `discussion`
+-- Database: `clubs`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `2`
+-- Table structure for table `ecoclub`
 --
 
-CREATE TABLE `2` (
-  `sender` varchar(20) NOT NULL,
-  `date` date NOT NULL,
-  `data` varchar(1000) NOT NULL,
-  `comments` varchar(10000) NOT NULL,
-  `branch` varchar(10) NOT NULL,
-  `section` char(1) NOT NULL
+CREATE TABLE `ecoclub` (
+  `roll no` varchar(20) NOT NULL,
+  `name` char(30) NOT NULL,
+  `branch` char(10) NOT NULL,
+  `section` char(1) NOT NULL,
+  `year` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `2`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `2` (`sender`, `date`, `data`, `comments`, `branch`, `section`) VALUES
-('14p61a0536', '2017-07-04', 'wfdafgerarfae', '', 'CSE', 'A');
+--
+-- Indexes for table `ecoclub`
+--
+ALTER TABLE `ecoclub`
+  ADD PRIMARY KEY (`roll no`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

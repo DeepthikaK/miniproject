@@ -2,6 +2,7 @@
 $(document).ready(function(){
 	setTimeout(function(){
 		collegeposts();
+		$('#menu0').css('border-bottom','solid 3px #03abf9').css('background-color','white').css('color','black');
 	},10);
 });
 
@@ -97,5 +98,39 @@ function fun(){
 }
 function classposts(){
 	$('#main_body').html('<h1>Class Discussions</h1>');
-	$('#main_body').append('<input type="textarea" id="textarea_department" placeholder="Enter a message..."><input type="button" id="post_department" onclick="post_department()" value="post">');
+	$('#main_body').append('<input type="textarea" id="textarea_class" placeholder="Enter a message..."><input type="button" id="post_class" onclick="post_class()" value="post">');
+	$.ajax({
+		url:"classwise.php",
+		type:"post",
+		
+		dataType:"json",
+		success:function(data){
+			var i=0;
+			for(i=0;i<data.rows;i++){
+				$('#main_body').append('<u><div id="post'+i+'"class="posts"><div class="sender"><span id="sender_roll">'+data[i].sender+' :</span> &nbsp'+data[i].message+'</div><div class="date">'+data[i].date+'</div><div class="comment"><input type="textarea" class="comment_textaread" rows="2" cols="190" placeholder="Write a message..."><input type="button" class="comment_sendd" value="post"></div></div><hr width="100%" height="3px"/>');
+			}
+		}
+	});
+}
+function post_class(){
+	var posted_data=$('#textarea_class').val();
+	if(posted_data==""){
+		
 	}
+	else{
+		$.ajax({
+		url:"post_insertcls.php",
+		type:"post",
+		data:{posted_data:posted_data},
+		dataType:"json",
+		success:function(data){
+			if(data.success){
+				classposts();
+				alert('Your message is posted!!');
+				
+			}
+			
+		}
+	});
+	}
+};

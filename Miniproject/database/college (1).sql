@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2017 at 04:07 PM
+-- Generation Time: Jul 19, 2017 at 10:17 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -41,7 +41,8 @@ INSERT INTO `college` (`sender`, `date`, `data`, `comments`) VALUES
 ('14P61A0547', '2017-07-07', 'Hello VBIT', ''),
 ('14P61A0547', '2017-07-11', 'regee', ''),
 ('14P61A0547', '2017-07-11', 'qwed', ''),
-('14P61A0547', '2017-07-11', 'bhg', '');
+('14P61A0547', '2017-07-11', 'bhg', ''),
+('14P61A0547', '2017-07-17', 'dxghyrfnjhd', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

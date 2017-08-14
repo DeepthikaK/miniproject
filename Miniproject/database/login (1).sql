@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 11, 2017 at 04:05 PM
+-- Generation Time: Jul 19, 2017 at 10:13 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -29,22 +29,27 @@ SET time_zone = "+00:00";
 CREATE TABLE `login` (
   `roll no` varchar(10) NOT NULL,
   `name` varchar(50) NOT NULL,
-  `password` varchar(150) NOT NULL,
+  `password` varchar(300) NOT NULL,
   `branch` varchar(5) NOT NULL,
   `section` varchar(1) NOT NULL,
-  `year` int(1) NOT NULL
+  `year` int(1) NOT NULL,
+  `club` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`roll no`, `name`, `password`, `branch`, `section`, `year`) VALUES
-('14P61A0510', 'Akruthi', 'login123', 'CSE', 'A', 1),
-('14P61A0536', 'Deepthika', 'login456', 'CSE', 'A', 2),
-('14P61A0547', 'Harshith ', 'login123', 'CSE', 'A', 3),
-('d4', 'ss', 'eee', 'EEE', 'A', 4),
-('t7', 'iui', 'lli0', 'ECE', 'A', 2);
+INSERT INTO `login` (`roll no`, `name`, `password`, `branch`, `section`, `year`, `club`) VALUES
+('14P61A0222', 'abc', 'd56b699830e77ba53855679cb1d252da', 'eee', 'A', 4, ''),
+('14P61A0342', 'mounika', 'd56b699830e77ba53855679cb1d252da', 'MECH', 'A', 4, ''),
+('14P61A0510', 'Akruthi', 'd56b699830e77ba53855679cb1d252da', 'CSE', 'A', 1, ''),
+('14P61A0536', 'Deepthika', 'd56b699830e77ba53855679cb1d252da', 'CSE', 'B', 2, ''),
+('14P61A0547', 'Harshith ', 'd56b699830e77ba53855679cb1d252da', 'CSE', 'C', 3, ''),
+('14P61A1209', 'AAA', 'd56b699830e77ba53855679cb1d252da', 'IT', 'A', 4, ''),
+('14P61A1922', 'rani', 'd56b699830e77ba53855679cb1d252da', 'ece', 'A', 4, ''),
+('15P61A0224', 'geetha', 'd56b699830e77ba53855679cb1d252da', 'eee', 'A', 3, ''),
+('16P61A0222', 'xyz', 'd56b699830e77ba53855679cb1d252da', 'ece', 'D', 2, '');
 
 --
 -- Indexes for dumped tables
